@@ -1,0 +1,43 @@
+create table employee1(
+ID number,
+F_Name varchar(78),
+L_Name varchar(70),
+Salary NUMBER,
+Dept Varchar(70),
+DOJ date,
+Address VARCHAR(80),
+Married Varchar(4)
+);
+select * from employee1;
+INSERT into employee1 values(1,'Vinay','Kumar',25000,'MCA','27-Jan-2001','Ghaziabad','Y');
+delete  from employee1 where F_Name='Sagar';
+INSERT into employee1 values(4,'Sagar','Kumar',20000,'IT','12-feb-2019','Ghaziabad','N');
+INSERT into employee1 values(5,'Rohan','Sharma',20000,'CS','19-nov-2005','Ghaziabad','');
+INSERT into employee1 values(6,'Robin','singh',18000,'it','22-dec-2021','merut','N');
+INSERT into employee1 values(7,'Akash','Ranjan',22000,'CS','15-nov-2021','Kanpur','');
+select *from employee1 order by ID;
+select * from employee1 where address='Ghaziabad';
+select distinct dept from employee1;
+
+select ID, dept, f_name| |L_Name as "complete_name" from employee1;
+select F_name|| 'IS WORKING IN '||dept from employee1;
+select F_Name from employee1 where doj>'15-jan-19';
+
+select * from employee1 where dept='MCA' and married='Y';
+select * from employee1 where  married='Y';
+select * from employee1 where  married='N';
+select * from employee1 where dept<>'MCA';
+
+37
+SELECT
+38
+* from employeel where dept='MCA' and married='Y"
+* FROM employeel where married='Y'
+SELECT
+select
+* FROM employee1 where married='N'
+* from employeel where dept‹> 'MCA"
+select ID,f _name, dept, saalry+300,doj, address, married from employeel;
+select * from employeel where salary between 15000 AND 30000;
+select* from employee1 where doj between '27-SEP-01' AND '12-FEB-19';
+select * from employee1 where dept in ('MCA', 'CS');
