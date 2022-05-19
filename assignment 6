@@ -1,0 +1,33 @@
+CREATE  TABLE salesman (salesman_id NUMBER(6),name varchar(20),city varchar(20),commission NUMBER(6,2) );
+INSERT into salesman values(50001,'james hoong','New York',0.15);
+INSERT into salesman values(50002,'Nail Knite','Paris',0.13);
+INSERT into salesman values(50005,'Pit Alex','London',0.11);
+INSERT into salesman values(50006,'Mc Lyon','Paris',0.14);
+INSERT into salesman values(50007,'Paul Adam','Rome',0.13);
+INSERT into salesman values(50003,'Lauson Hen','San Lose',0.12);
+SELECT *from salesman
+CREATE TABLE Customer(customer_id NUMBER(10),cust_name VARCHAR(20),city VARCHAR(20),grade NUMBER(6),salesman_id NUMBER(10));
+INSERT into Customer values(30002,'Nick Rimando','New York',100,50001);
+INSERT into Customer values(30007,'Brad Davis','New York',200,50001);
+INSERT into Customer values(30005,'Graham Zusi','California',200,50002);
+INSERT into Customer values(30008,'Julian Green','London',300,50002);
+INSERT into Customer values(30004,'Fabian Johnson','Paris',300,50006);
+INSERT into Customer values(30009,'Geoff Cameron','Berlin',100,50003);
+INSERT into Customer values(30003,'Jozy Altidor','Moscow',100,50007);
+INSERT into Customer values(30001,'Brad guzan','London',100,50005);
+SELECT *from Customer
+
+INSERT INTO Orders VALUES(7001,150.5,TO_DATE('2012-10-05','yyyy-mm-dd'),3005,5002);
+    INSERT INTO Orders VALUES(7009,270.65,TO_DATE('2012-09-10','yyyy-mm-dd'),3001,5005);
+    INSERT INTO Orders VALUES(7002,65.26,TO_DATE('2012-10-05','yyyy-mm-dd'),3002,5001);
+    INSERT INTO Orders VALUES(7004,110.5,TO_DATE('2012-08-17','yyyy-mm-dd'),3009,5003);
+    INSERT INTO Orders VALUES(7007,948.5,TO_DATE('2012-09-10','yyyy-mm-dd'),3005,5002);
+    INSERT INTO Orders VALUES(7005,2400.6,TO_DATE('2012-07-27','yyyy-mm-dd'),3007,5001);
+		INSERT INTO Orders VALUES(70008,	5760,	TO_DATE('2012-09-10','yyyy-mm-dd'),	3002,	5001);
+		INSERT INTO Orders VALUES(70010,	1983.43,	TO_DATE('2012-10-10','yyyy-mm-dd'),	3004,	5006);
+		INSERT INTO Orders VALUES(70003,	2480.4,	TO_DATE('2012-10-10','yyyy-mm-dd'),	3009,	5003);
+		INSERT INTO Orders VALUES(70012,	250.45,TO_DATE('2012-06-27','yyyy-mm-dd'),	3008,	5002);
+		INSERT INTO Orders VALUES(70011,	75.29,	TO_DATE('2012-08-17','yyyy-mm-dd'),	3003,	5007);
+		INSERT INTO Orders VALUES(70013, 3045.6,	TO_DATE('2012-04-25','yyyy-mm-dd'),	3002,	5001);
+		SELECT*FROM Orders
+		
