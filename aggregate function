@@ -1,0 +1,24 @@
+create table employee(
+Empid number(2),
+Name varchar(20),
+Dept VARCHAR(20),
+Salary number(10),
+Doj date
+);
+insert into  employee  values(1,'Satyam','MCA',450000,'10-jan-2021');
+insert into  employee  values(2,'Mohan','CS',150000,'10-feb-2020');
+insert into  employee  values(3,'Rajiv','IT',450000,'10-march-2021');
+insert into  employee  values(4,'Rahul','CS',150000,'10-feb-2018');
+insert into  employee  values(5,'Arjun','MCA',250000,'19-march-2019');
+insert into  employee  values(6,'Shivam','MCA',950000,'10-april-2020');
+insert into  employee  values(7,'Rajiv','MCA',450000,'10-march-2021');
+select *from employee;
+drop table employee;
+select max (Doj) from employee;
+select min (Doj) from employee;
+select count(DISTINCT dept) "total" from employee group by dept;
+select count(*) from employee;
+select dept,avg(salary) from employee group by dept;
+
+
+
