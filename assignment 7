@@ -1,0 +1,33 @@
+create table Employees (EmpID VARCHAR2(3) Check (EmpId LIKE 'E%') primary key ,
+Ename VARCHAR2(25) not null ,
+DOB date not null,
+DOJ date not null,
+salary number(7) not null)
+
+insert into employees VALUES ('E01','John','10-Oct-1998','01-Apr-2015',8000)
+insert into employees VALUES ('E02','Alex','05-Jan-1998','01-Jul-2016',8000)
+insert into employees VALUES ('E03','Jenny','11-Oct-1999','01-Apr-2016',8000)
+insert into employees VALUES ('E04','Max','25-Dec-2000','03-Jan-2017',8000)
+insert into employees VALUES ('E05','Johnny','10-Oct-1997','01-Apr-2019',7000)
+
+select * from employees where Doj = '01-Apr-2015'
+
+select ename,to_char(doj,'mon-dd-yyyy') from employees
+
+select * from employees where doj<('01-jan-2018')
+
+SELECT * FROM employees WHERE to_char(doj, 'mon')='jan'
+SELECT * FROM EMPLOYEES
+
+select * from employees ORDER BY doj desc
+
+select * from employees 
+
+select * from employees where mod(salary,2)=0
+select * from employees ORDER BY doj desc
+
+select * from employees 
+SELECT * from employees where to_char(doj,'yyyy')='2016' 
+
+SELECT * from employees where to_char(doj,'mon') not in 'mar' 
+select * from employees WHERE dob<'25-Dec-2000'
